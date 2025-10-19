@@ -1,0 +1,31 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/multikey/v1"
+  ],
+  "id": "did:web:caiyangcy.github.io",
+  "alsoKnownAs": [
+    "at://caiyangcy.github.io"
+  ],
+  "verificationMethod": [
+    {
+      "id": "did:web:caiyangcy.github.io#atproto",
+      "type": "Multikey",
+      "controller": "did:web:caiyangcy.github.io",
+      "publicKeyMultibase": "7r8opLMTU1o4vGfuWx5pAXHri5hz6QuNYu8c9J7m3V7gngg3xXucWeqc81iE3nEG5XRBSczyQy15Z5RD8eSqNWe9twZS"
+    }
+  ],
+  "service": [
+    {
+      "id": "#bsky_notif",
+      "type": "BskyNotificationService",
+      "serviceEndpoint": "https://caiyangcy.github.io"
+    },
+    {
+      "id": "#bsky_appview",
+      "type": "BskyAppView",
+      "serviceEndpoint": "https://caiyangcy.github.io"
+    }
+  ]
+}
+
